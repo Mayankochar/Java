@@ -40,12 +40,12 @@ public class KadaneAlgorithm {
      * @param args Command line arguments
      */
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scn = new Scanner(System.in);
         int n, arr[], i;
-        n = sc.nextInt();
+        n = scn.nextInt();
         arr = new int[n];
         for (i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+            arr[i] = scn.nextInt();
         }
         int maxContSum = largestContiguousSum(arr);
         System.out.println(maxContSum);
